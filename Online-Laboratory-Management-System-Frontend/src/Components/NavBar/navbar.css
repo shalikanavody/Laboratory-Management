@@ -1,0 +1,131 @@
+nav {
+	position: relative;
+	margin: 0px auto 0px;
+	width: 100%;
+	height: 50px;
+	background: #265673;
+	font-size: 0;
+	box-shadow: 0 2px 3px 0 white;
+}
+
+nav a {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	font-weight: 500;
+	line-height: 50px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+}
+
+nav a:hover {
+	color: white;
+}
+
+nav .animation {
+	position: absolute;
+	height: 3px;
+	bottom: 0;
+	z-index: 0;
+	background: white;
+	transition: all 0.5s ease 0s;
+}
+
+a:nth-child(1) {
+	width: 100px;
+}
+
+nav .start-home,
+a:nth-child(1) ~ .animation {
+	width: 0px;
+	left: 0;
+}
+
+a:nth-child(1):hover ~ .animation {
+	width: 100px;
+	left: 0;
+}
+
+a:nth-child(2) {
+	width: 110px;
+}
+
+nav a:nth-child(2):hover {
+	color: white;
+}
+
+nav .start-about,
+a:nth-child(2):hover ~ .animation {
+	width: 110px;
+	left: 100px;
+}
+
+a:nth-child(3) {
+	width: 120px;
+}
+
+nav a:nth-child(3):hover {
+	color: white;
+}
+
+nav .start-contact,
+a:nth-child(3):hover ~ .animation {
+	width: 120px;
+	left: 210px;
+	color: black;
+}
+
+a:nth-child(4) {
+	width: 140px;
+}
+
+nav a:nth-child(4):hover {
+	color: white;
+}
+
+nav .start-services,
+a:nth-child(4):hover ~ .animation {
+	width: 140px;
+	left: 330px;
+}
+
+a:nth-child(5) {
+	width: 120px;
+}
+
+nav a:nth-child(5):hover {
+	color: white;
+}
+
+nav .start-register,
+a:nth-child(5):hover ~ .animation {
+	width: 120px;
+	left: 470px;
+}
+
+a:nth-child(6) {
+	margin-left: 40px;
+	width: fit;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: white;
+	color: #265673;
+}
+
+nav a:nth-child(6):hover {
+	color: #265673;
+	text-decoration: underline;
+}
+
+a:nth-child(7) {
+	width: 700px;
+	margin-left: 180px;
+	font-size: x-large;
+}
+
+.LogoName {
+	letter-spacing: 10px;
+}
